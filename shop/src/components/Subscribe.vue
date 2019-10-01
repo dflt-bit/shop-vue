@@ -31,6 +31,7 @@
     form{
         display: flex;
         justify-content: center;
+        margin: 3rem 0 1rem 0;
     }
     form input{
         width: 40%;
