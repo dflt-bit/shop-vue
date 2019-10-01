@@ -63,7 +63,8 @@
 
 <style scoped>
     .popup{
-        position: absolute;
+        position: fixed;
+        z-index: 99;
         top: 0;
         left: 0;
         width: 100%;
@@ -71,13 +72,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgba(0,0,0,.2);
+        background-color: rgba(0,0,0,.3);
     }
     .popup .body{
         padding: 3rem;
-        box-shadow: 0 0 5px rgba(0,0,0,.5);
-        border-radius: 5px;
+        box-shadow: 0 0 2px rgba(0,0,0,.5);
         background-color: #fff;
+        border: 1px solid black;
     }
     .popup .body form{
         display: flex;
@@ -85,6 +86,16 @@
     }
     .popup .body form input{
         margin-bottom: 10px;
+        padding: 5px;
+        border: 1px solid grey;
+        outline: none;
+    }
+    .popup .body form button{
+        color: white;
+        background-color: black;
+        padding: 5px;
+        border: 1px solid black;
+        outline: none;
     }
     .popup .body .error{
         color: red;
