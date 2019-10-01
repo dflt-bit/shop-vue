@@ -18,7 +18,7 @@
 
 <style scoped>
     div.subscribe{
-        padding: 7rem 0 7rem 0;
+        padding: 10rem 0 10rem 0;
     }
     h2{
         text-transform: uppercase;
