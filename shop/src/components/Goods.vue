@@ -94,7 +94,7 @@
 <style scoped>
     main article.goods-categories {
         background-color: white;
-        padding: 0px 30px;
+        padding: 0px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
