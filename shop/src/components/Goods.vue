@@ -103,243 +103,243 @@
     }
 
     main article.goods-categories > div.category-item {
-            max-width: 25%;
-            width: 100%;
-            min-height: 300px;
-            max-height: 600px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            position: relative;
+        max-width: 25%;
+        width: 100%;
+        min-height: 300px;
+        max-height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
     }
 
     main article.goods-categories > div.category-item:nth-child(1) {
-            background-image: url(../images/1.jpg);
-            background-size: cover;
-            background-position: center;
-            height: 600px;
+        background-image: url(../images/1.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 600px;
     }
 
     main article.goods-categories > div.category-item:nth-child(1) > div.content {
-            width: 60%;
-            display: flex;
-            flex-direction: column;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
     }
 
     main article.goods-categories > div.category-item:nth-child(1) > div.content > span {
-            color: white;
-            font-size: 1.5rem;
-            text-transform: uppercase;
+        color: white;
+        font-size: 1.5rem;
+        text-transform: uppercase;
     }
 
     main article.goods-categories > div.category-item:nth-child(1) > div.content > span:last-child {
-            font-style: italic;
-            font-size: 1.25rem;
+        font-style: italic;
+        font-size: 1.25rem;
     }
 
     main article.goods-categories > div.category-item:nth-child(2) {
-            background-image: url(../images/5.jpg);
-            background-size: cover;
-            background-position: center;
+        background-image: url(../images/5.jpg);
+        background-size: cover;
+        background-position: center;
     }
 
     main article.goods-categories > div.category-item:nth-child(3) {
-            background-size: cover;
-            background-position: center;
-            background-color: #bbbbbb;
+        background-size: cover;
+        background-position: center;
+        background-color: #bbbbbb;
     }
 
     main article.goods-categories > div.category-item:nth-child(3) > div.content {
-            width: 60%;
-            display: flex;
-            flex-direction: column;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
     }
 
     main article.goods-categories > div.category-item:nth-child(3) > div.content > div.img {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
     }
 
     main article.goods-categories > div.category-item:nth-child(3) > div.content > div.img > hr {
-            width: 30px;
-            height: 1px;
-            background: white;
-            border: none;
+        width: 30px;
+        height: 1px;
+        background: white;
+        border: none;
     }
 
     main article.goods-categories > div.category-item:nth-child(3) > div.content > div.img > img {
-            height: 40px;
-            width: 40px;
+        height: 40px;
+        width: 40px;
     }
 
     main article.goods-categories > div.category-item:nth-child(3) > div.content > span {
-            color: white;
-            font-style: italic;
+        color: white;
+        font-style: italic;
     }
 
     main article.goods-categories > div.category-item:nth-child(4) {
-            background-image: url(../images/2.jpg);
-            background-size: cover;
-            background-position: center;
+        background-image: url(../images/2.jpg);
+        background-size: cover;
+        background-position: center;
     }
 
     main article.goods-categories > div.category-item:nth-child(4) > div.content {
-            width: 60%;
-            display: flex;
-            flex-direction: column;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
     }
 
     main article.goods-categories > div.category-item:nth-child(4) > div.content > span {
-            color: white;
-            font-size: 1.5rem;
-            text-transform: uppercase;
+        color: white;
+        font-size: 1.5rem;
+        text-transform: uppercase;
     }
 
     main article.goods-categories > div.category-item:nth-child(4) > div.content > span:last-child {
-            font-style: italic;
-            font-size: 1.25rem;
-            text-transform: none;
+        font-style: italic;
+        font-size: 1.25rem;
+        text-transform: none;
     }
 
     main article.goods-categories > div.category-item:nth-child(5) {
-            background-size: cover;
-            background-position: center;
-            background-color: #606060;
+        background-size: cover;
+        background-position: center;
+        background-color: #606060;
     }
 
     main article.goods-categories > div.category-item:nth-child(5) > div.content {
-            display: flex;
-            flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
 
     main article.goods-categories > div.category-item:nth-child(5) > div.content > span {
-            font-size: 1.75rem;
-            text-transform: uppercase;
-            color: white;
+        font-size: 1.75rem;
+        text-transform: uppercase;
+        color: white;
     }
 
     main article.goods-categories > div.category-item:nth-child(6) {
-            background-image: url(../images/3.jpg);
-            background-size: cover;
-            background-position: center;
+        background-image: url(../images/3.jpg);
+        background-size: cover;
+        background-position: center;
     }
 
     main article.goods-categories > div.category-item:nth-child(7) {
-            background-size: cover;
-            background-position: center;
-            background-color: #bbbbbb;
+        background-size: cover;
+        background-position: center;
+        background-color: #bbbbbb;
     }
 
     main article.goods-categories > div.category-item:nth-child(7) > div.content {
-            width: 60%;
-            display: flex;
-            flex-direction: column;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
     }
 
     main article.goods-categories > div.category-item:nth-child(7) > div.content > div.img {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
     }
 
     main article.goods-categories > div.category-item:nth-child(7) > div.content > div.img > hr {
-            width: 30px;
-            height: 1px;
-            background: white;
-            border: none;
+        width: 30px;
+        height: 1px;
+        background: white;
+        border: none;
     }
 
     main article.goods-categories > div.category-item:nth-child(7) > div.content > div.img > img {
-            height: 40px;
-            width: 40px;
+        height: 40px;
+        width: 40px;
     }
 
     main article.goods-categories > div.category-item:nth-child(7) > div.content > span {
-            color: white;
-            font-style: italic;
+        color: white;
+        font-style: italic;
     }
 
     main article.goods-categories > div.category-item:nth-child(8) {
-            background-image: url(../images/6.jpg);
-            background-size: cover;
-            background-position: center;
-            position: relative;
+        background-image: url(../images/6.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
     }
 
     main article.goods-categories > div.category-item:nth-child(8) > div.body {
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
     }
 
     main article.goods-categories > div.category-item:nth-child(8) > div.body > div.content {
-            width: 60%;
-            display: flex;
-            flex-direction: column;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
     }
 
     main article.goods-categories > div.category-item:nth-child(8) > div.body > div.content > span {
-            color: white;
-            font-size: 1.5rem;
-            text-transform: uppercase;
+        color: white;
+        font-size: 1.5rem;
+        text-transform: uppercase;
     }
 
     main article.goods-categories > div.category-item:nth-child(8) > div.body > div.content > span:last-child {
-            font-style: italic;
-            font-size: 1.25rem;
-            text-transform: none;
+        font-style: italic;
+        font-size: 1.25rem;
+        text-transform: none;
     }
 
     main article.goods-categories > div.category-item:nth-child(9) {
-            background-size: cover;
-            background-position: center;
-            background-color: #606060;
+        background-size: cover;
+        background-position: center;
+        background-color: #606060;
     }
 
     main article.goods-categories > div.category-item:nth-child(9) > div.content {
-            display: flex;
-            flex-direction: column;
-    width: 70%;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
     }
 
     main article.goods-categories > div.category-item:nth-child(9) > div.content > span {
-            font-size: 1.5rem;
-            text-transform: uppercase;
-            color: white;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: white;
     }
 
     main article.goods-categories > div.category-item:nth-child(9) > div.content > span:last-child {
-            font-style: italic;
-            font-size: 1.1rem;
+        font-style: italic;
+        font-size: 1.1rem;
     }
 
     main article.goods-categories > div.category-item:nth-child(10) {
-            background-image: url(../images/4.jpg);
-            background-size: cover;
-            background-position: center;
-            height: 600px;
+        background-image: url(../images/4.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 600px;
     }
 
     main article.goods-categories > div.category-item:nth-child(10) > div.content {
-            width: 60%;
-            display: flex;
-            flex-direction: column;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
     }
 
     main article.goods-categories > div.category-item:nth-child(10) > div.content > span {
-            color: white;
-            font-size: 1.5rem;
-            text-transform: uppercase;
+        color: white;
+        font-size: 1.5rem;
+        text-transform: uppercase;
     }
 
     main article.goods-categories > div.category-item:nth-child(10) > div.content > span:last-child {
-            font-style: italic;
-            font-size: 1.25rem;
+        font-style: italic;
+        font-size: 1.25rem;
     }
 </style>
