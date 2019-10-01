@@ -17,6 +17,9 @@
 </script>
 
 <style scoped>
+    div.subscribe{
+        padding: 7rem 0 7rem 0;
+    }
     h2{
         text-transform: uppercase;
         font-size: 2rem;
