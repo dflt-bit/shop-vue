@@ -6,7 +6,7 @@ $data = json_decode($json, true);
 
 $res = [];
 
-if(!empty($data['email'])){
+if(!empty( $data['email']) && (strpos($data['email'], "@") && strpos($data['email'], ".")) ){
     $db = connectToDb();
 
     $sql = "INSERT INTO subscribe(`EMAIL`) VALUES('{$data['email']}');";
