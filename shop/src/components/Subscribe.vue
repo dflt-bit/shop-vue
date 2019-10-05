@@ -2,17 +2,49 @@
     <div class="subscribe">
         <h2>Будь всегда в курсе выгодных предложений</h2>
         <h4>подписывайся и следи за новинками и выгодными предложениями</h4>
-        <form>
-            <input type="email" placeholder="e-mail"/>
-            <button>записаться</button>
+        <form v-show="!successSubmit">
+            <input type="email" placeholder="e-mail" v-model="email"/>
+            <button @click="subscribe">записаться</button>
         </form>
-        <div class="error"></div>
+        <div class="error" v-show="!successSubmit">{{ error }}</div>
+        <div class="success" v-show="successSubmit">Вы успешно подписаны</div>
     </div>
 </template>
 
 <script>
     export default {
-        name: "Subscribe"
+        name: "Subscribe",
+        data(){
+            return {
+                email: '',
+                error: '',
+                successSubmit: false
+            };
+        },
+        methods: {
+            subscribe(){
+                fetch(
+                    'http://localhost/shop_dev/api/subscribe.php',
+                    {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({email: this.email})
+                    }
+                ).then(res => res.json()).then(res => {
+                    console.log(res);
+
+                    if(!!res['error']){
+                        this.error = res['error'];
+                    }else{
+                        if(!!res['success']){
+                            this.successSubmit = true;
+                        }
+                    }
+                });
+            }
+        }
     }
 </script>
 
@@ -40,8 +72,17 @@
     }
     form button{
         background-color: orange;
-        border: 1px solid orange;
+        border-color: orange;
         padding: 15px;
         color: white;
+    }
+    div.success{
+        color: rgb(32, 210, 32);
+        font-size: 1.2rem;
+        font-style: italic;
+    }
+    div.error{
+        color: red;
+        font-style: italic;
     }
 </style>
