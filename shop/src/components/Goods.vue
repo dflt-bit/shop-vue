@@ -1,7 +1,7 @@
 <template>
-    <article class="goods-categories">
+    <!-- <article class="goods-categories"> -->
 
-        <div class="category-item">
+        <!-- <div class="category-item">
             <div class="content">
                 <span>Джинсовые куртки</span>
                 <span>New Arrival</span>
@@ -80,19 +80,48 @@
                 <span>Детская одежда</span>
                 <span>New Arrival</span>
             </div>
-        </div>
+        </div> -->
 
-    </article>
+    <!-- </article> -->
+
+    <div class="goods">
+        <Goodsitem v-for="(item, id) in items" :item="item" :classProp="id % 6 === 0 ? 'two-row' : ''"></Goodsitem>
+    </div>
 </template>
 
 <script>
+    import Goodsitem from './Goodsitem';
+
     export default {
-        name: "Goods"
+        name: "Goods",
+        components : {Goodsitem},
+        data(){
+            return {
+                items: []
+            };
+        },
+        mounted(){
+            fetch(
+                'http://localhost/shop_dev/api/subcategory.php',
+                {
+                    method: 'GET',
+                    headers:{
+                        'Content-Type': 'application/json'
+                    }
+                }
+            ).then(res => res.json()).then(res => {
+                this.items = res;
+            });
+        }
     }
 </script>
 
 <style scoped>
-    main article.goods-categories {
+    .goods{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /* main article.goods-categories {
         background-color: white;
         display: flex;
         flex-direction: column;
@@ -341,5 +370,5 @@
     main article.goods-categories > div.category-item:nth-child(10) > div.content > span:last-child {
         font-style: italic;
         font-size: 1.25rem;
-    }
+    } */
 </style>
