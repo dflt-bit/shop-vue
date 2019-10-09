@@ -7,8 +7,9 @@
             <div class="icon"></div>
             <h2 v-if="item['name']">{{ item['name'] }}</h2>
             <h3 v-if="item['subname']">{{ item['subname'] }}</h3>
-            <div class="desciption" v-if="item['desc']">{{ item['desc'] }}</div>
+            <div class="description" v-if="item['desc']">{{ item['desc'] }}</div>
         </div>
+        <div class="body-sportwear"></div>
     </div>
 </template>
 
@@ -27,21 +28,62 @@
 </script>
 
 <style scoped>
+    div.img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div.content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 4;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
     h2{
         text-transform: uppercase;
+        color: white;
+        margin: 0;
     }
     h3{
         font-style: italic;
+        color: white;
+        margin: 0;
     }
     .description{
         font-style: italic;
+        color: white;
     }
     .item{
-        width: 300px;
+        width: 25%;
         height: 300px;
         overflow: hidden;
+        position: relative;
+    }
+    .item:nth-child(8) > div.body-sportwear{
+        z-index: 3;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,.5);
+    }
+    .item:nth-child(4) > div.img > img{
+        width: 100%;
+        height: 100%;
     }
     .item.two-row{
         height: 600px;
+    }
+    .lgrey{
+        background-color: lightgrey;
+    }
+    .dgrey{
+        background-color: grey;
     }
 </style>
