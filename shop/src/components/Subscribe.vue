@@ -51,6 +51,7 @@
 <style scoped>
     div.subscribe{
         padding: 10rem 0 10rem 0;
+        text-align: center;
     }
     h2{
         text-transform: uppercase;

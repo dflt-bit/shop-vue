@@ -15,7 +15,7 @@
 
 <script>
     export default {
-        name: "GoodsItem",
+        name: "Goodsitem",
         props: ['item', 'classProp'],
         methods: {
             goToCategory(){
@@ -57,6 +57,7 @@
     .description{
         font-style: italic;
         color: white;
+        text-align: center;
     }
     .item{
         width: 25%;
