@@ -63,5 +63,11 @@
         border: none;
         border-bottom: 1px solid black;
         margin-right: 20px;
+        outline: none;
+        font-size: 1.1rem;
+    }
+    div.options > select option{
+        padding: 15px 5px;
+        outline: none;
     }
 </style>
