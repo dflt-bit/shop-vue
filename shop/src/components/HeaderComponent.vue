@@ -10,7 +10,7 @@
         </nav>
         <div class="user">
             <Login></Login>
-            <div>Корзина(0)</div>
+            <div @click="$router.push('/basket/')">Корзина(0)</div>
         </div>
     </header>
 </template>
@@ -48,5 +48,6 @@
     }
     .user div{
         margin-right: 20px;
+        cursor: pointer;
     }
 </style>

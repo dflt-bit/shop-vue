@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import Main from '../components/Main';
 import Category from '../components/Category';
 import Detail from '../components/Detail';
+import Basket from '../components/Basket';
 
 Vue.use(Router)
 
@@ -25,6 +26,11 @@ export default new Router({
       name: 'Detail',
       component: Detail,
       props: true
+    },
+    {
+      path: '/basket',
+      name: 'Basket',
+      component: Basket
     }
   ]
 })
