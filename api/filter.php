@@ -1,5 +1,4 @@
 <?php
-
 include 'function.php';
 
 $db = connectToDb();
@@ -14,7 +13,7 @@ $res = [
 ];
 
 while($item = mysqli_fetch_assoc($resDB)){
-    $res['subcategory'] [] = $item;
+    $res['subcategory'][] = $item;
 }
 
 $sql = "SELECT ID, NAME FROM size;";
@@ -31,7 +30,6 @@ $min = 0;
 $max = 0;
 
 while($item = mysqli_fetch_assoc($resDB)){
-    $res['price'][] = $item;
     $min = floatval($item['MINPRICE']);
     $max = floatval($item['MAXPRICE']);
 }
@@ -41,12 +39,11 @@ $delta = ($max - $min) / 4;
 for($i = $min; $i < $max; $i += $delta){
     $res['price'][] = [
         'min' => $i,
-        'max' => $i+ $delta
+        'max' => $i + $delta
     ];
 }
 
 mysqli_close($db);
 
 die(json_encode($res));
-
 ?>

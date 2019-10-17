@@ -4,7 +4,7 @@ function connectToDb(){
     $DB_HOST = 'localhost';
     $DB_USER = 'root';
     $DB_PASS = '';
-    $DB_NAME = 'ignat';
+    $DB_NAME = 'ignat_';
 
     $link = mysqli_connect(
         $DB_HOST,
