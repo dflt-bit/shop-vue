@@ -36,7 +36,7 @@
             };
         },
         methods: {
-            getFilter(filters){
+            getFilters(filters){
                 console.log(filters);
             }
         },
@@ -50,10 +50,10 @@
                     }
                 }
             ).then(res => res.json()).then(res => {
+
                 this.items = res;
             });
         }
-        // components: {CategoryTop,CategoryGoods,CategoryPageSelector}
     }
 </script>
 
