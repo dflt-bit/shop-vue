@@ -60,11 +60,12 @@
     .shipping > h2{
         text-transform: uppercase;
         color: black;
-        margin-bottom: 1rem;
+        font-size: 1.75rem;
     }
     .shipping > span{
         font-style: italic;
         color: grey;
+        font-size: 1.25rem;
     }
 
     form{
