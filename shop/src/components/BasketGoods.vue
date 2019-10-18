@@ -33,10 +33,10 @@
 
                 <div class="item">
                     <div class="item-info">
-                        <div class="item-photo"><img src="../images/catalog/1.jpg" alt=""/></div>
+                        <div class="item-photo"><img src="../images/catalog/7.jpg" alt=""/></div>
                         <div class="item-name">
-                            <span>Куртка синяя</span>
-                            <span>арт. 123412</span>
+                            <span>Кеды серые</span>
+                            <span>арт. 2348329</span>
                         </div>
                     </div>
                     <div class="item-params">
@@ -49,10 +49,10 @@
 
                 <div class="item">
                     <div class="item-info">
-                        <div class="item-photo"><img src="../images/catalog/1.jpg" alt=""/></div>
+                        <div class="item-photo"><img src="../images/catalog/12.jpg" alt=""/></div>
                         <div class="item-name">
-                            <span>Куртка синяя</span>
-                            <span>арт. 123412</span>
+                            <span>Джинсы голубые</span>
+                            <span>арт. 342355</span>
                         </div>
                     </div>
                     <div class="item-params">
@@ -122,7 +122,7 @@
     }
     div.items > div.item > div.item-info > div.item-photo > img{
         width: 100%;
-        height: 100%;
+        height: auto;
     }
 
     div.items > div.item > div.item-info > div.item-name{
