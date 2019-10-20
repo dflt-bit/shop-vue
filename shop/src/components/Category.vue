@@ -2,7 +2,7 @@
     <div class="category">
         <FilterComponent v-on:filter="getFilters"></FilterComponent>
         <div class="items">
-            <div class="item" v-for="item in items" @click="$router.push(`/detail/${item['VENDORCODE']}`)">
+            <div class="item" v-for="item in filteredItems" @click="$router.push(`/detail/${item['VENDORCODE']}`)">
                 <div class="img">
                     <img :src="`http://localhost${item['IMG']}`" alt=""/>
                 </div>
@@ -32,12 +32,54 @@
         props: ['id'],
         data(){
             return {
-                items: []
+                items: [],
+                filters: {}
             };
         },
+        computed: {
+            filteredItems: function(){
+
+                let res = [];
+
+                if(!this.filters.size && !this.filters.subcategory && !this.filters.price){
+                        res = this.items;
+                    }else{
+
+                        // debugger;
+
+                        res = this.items.filter(item => {
+
+                            let prices;
+                            if(!!this.filters.price){
+                                prices = this.filters.price.split(',');
+                            }
+
+                            return (!!this.filters.size && item.SIZE === this.filters.size) ||
+                            (!!this.filters.subcategory && item.SUBCATEGORY === this.filters.subcategory) ||
+                            (!!this.filters.price) && 
+                            (parseInt(item.PRICE) >= parseInt(prices[0]) && parseInt(item.PRICE) <= parseInt(prices[1]))
+                        });
+                        // for(let i of this.items){
+                        //     if(!!this.filters.size && i.SIZE === this.filters.size){
+                        //         res.push(i);
+                        //     }
+                        //     else if(!!this.filters.subcategory && i.SUBCATEGORY === this.filters.subcategory){
+                        //         res.push(i);
+                        //     }
+                        //     else if(!!this.filters.price){
+                        //         const prices = this.filters.price.split(',');
+                        //         if(parseInt(i.PRICE) >= parseInt(prices[0]) && parseInt(i.PRICE) <= parseInt(prices[1])){
+                        //             res.push(i);
+                        //         }
+                        //     }
+                        // }
+                    }
+                return res;
+            }
+        }, 
         methods: {
             getFilters(filters){
-                console.log(filters);
+                this.filters = filters;
             }
         },
         mounted(){
