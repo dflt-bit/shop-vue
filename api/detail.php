@@ -37,10 +37,4 @@ die(json_encode($res));
 
 
 
-
-
-
-
-
-
 ?>
