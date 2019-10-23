@@ -53,8 +53,9 @@
                             if(!!this.filters.price){
                                 prices = this.filters.price.split(',');
                             }
-
-                            return (!!this.filters.size && item.SIZE === this.filters.size) ||
+                            
+                            
+                            return (!!this.filters.size && item.SIZES.includes(this.filters.size) ) ||
                             (!!this.filters.subcategory && item.SUBCATEGORY === this.filters.subcategory) ||
                             (!!this.filters.price) && 
                             (parseInt(item.PRICE) >= parseInt(prices[0]) && parseInt(item.PRICE) <= parseInt(prices[1]))
@@ -94,6 +95,7 @@
             ).then(res => res.json()).then(res => {
 
                 this.items = res;
+                // this.sizes = res.sizes;
             });
         }
     }
