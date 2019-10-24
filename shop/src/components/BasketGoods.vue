@@ -14,60 +14,28 @@
                 </div>
             </div>
 
-            <div class="items">
+            <!-- <div class="items">
                 <div class="item">
                     <div class="item-info">
                         <div class="item-photo"><img src="../images/catalog/1.jpg" alt=""/></div>
                         <div class="item-name">
-                            <span>Куртка синяя</span>
-                            <span>арт. 123412</span>
+                            <span class="name">Куртка синяя</span>
+                            <span class="vcode">арт. 123412</span>
                         </div>
                     </div>
                     <div class="item-params">
-                        <span>39</span>
+                        <span class="size">39</span>
                         <input type="number" value="1"/>
-                        <span>3800</span>
+                        <span class="price">3800</span>
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
                     </div>
                 </div>
-
-                <div class="item">
-                    <div class="item-info">
-                        <div class="item-photo"><img src="../images/catalog/7.jpg" alt=""/></div>
-                        <div class="item-name">
-                            <span>Кеды серые</span>
-                            <span>арт. 2348329</span>
-                        </div>
-                    </div>
-                    <div class="item-params">
-                        <span>39</span>
-                        <input type="number" value="1"/>
-                        <span>3800</span>
-                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="item-info">
-                        <div class="item-photo"><img src="../images/catalog/12.jpg" alt=""/></div>
-                        <div class="item-name">
-                            <span>Джинсы голубые</span>
-                            <span>арт. 342355</span>
-                        </div>
-                    </div>
-                    <div class="item-params">
-                        <span>39</span>
-                        <input type="number" value="1"/>
-                        <span>3800</span>
-                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
-                    </div>
-                </div>
-            </div>
+            </div> -->
         </form>
-        <div class="priceSum">
+        <!-- <div class="priceSum">
             <span>Итого:</span>
             <span>12345 руб.</span>
-        </div>
+        </div> -->
     </div>
 </template>
 

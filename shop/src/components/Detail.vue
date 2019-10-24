@@ -89,7 +89,7 @@
         margin-bottom: 0;
     }
     .body h4{
-        marin-top: 0;
+        margin-top: 0;
         font-size: .6rem;
         opacity: .6;
     }
