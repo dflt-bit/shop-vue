@@ -1,7 +1,7 @@
 <template>
     <div class="login">
         <span v-on:click="togglePopup()" v-if="!isLogin">Войти</span>
-        <span v-else>{{ name }}</span>
+        <span v-else>Привет, {{ name }} (<span class="signOut" v-if="!!isLogin" @click="signOut">выйти</span>)</span>
         <div class="popup" v-show="showPopup">
             <div class="body">
                 <div class="error">{{ error }}</div>
@@ -54,6 +54,15 @@
                     }
                 });
             },
+            signOut(){
+                if(!!this.isLogin){
+                    this.isLogin = false;
+                    this.name = '';
+                    this.error = '';
+                    this.login = '';
+                    this.password = '';
+                }
+            },
             togglePopup(){
                 this.showPopup = !this.showPopup;
             }
@@ -101,5 +110,8 @@
         color: red;
         margin-bottom: 10px;
         font-size: .8rem;
+    }
+    .login .signOut{
+        color: orange;
     }
 </style>
