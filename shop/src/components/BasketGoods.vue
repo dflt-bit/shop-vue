@@ -1,6 +1,6 @@
 <template>
     <div>
-        <form>
+        <!-- <form> -->
             <div class="head">
                 <div class="info">
                     <span>Фото</span>
@@ -31,8 +31,8 @@
                     </div>
                 </div>
             </div> -->
-        </form>
-        <!-- <div class="priceSum">
+        <!-- </form>
+        <div class="priceSum">
             <span>Итого:</span>
             <span>12345 руб.</span>
         </div> -->
@@ -58,7 +58,7 @@
         margin-right: 3rem;
     }
 
-    div.items{
+    /* div.items{
         padding: 1rem 0;
     }
     div.items > div.item{
@@ -133,5 +133,5 @@
     }
     div.priceSum > span:last-child{
         color: orange;
-    }
+    } */
 </style>
